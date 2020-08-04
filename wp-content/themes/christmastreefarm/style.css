@@ -1,0 +1,50 @@
+/*
+ Theme Name:   Christmas Tree Farm
+ Theme URI:    christmastreefarm.melbourne
+ Description:  Christmase Tree Farm theme
+ Author:       James
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or late2
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  christmastreefarm
+*/
+/* Variables - Mixins */
+:root {
+	--color-bg--body: #fff;
+	--color-border--grey: #f7f7f7;
+	--color-theme--green: #3fc35f;
+	--color-text--header: #272727;
+	--color-text--link: #575757;
+	--color-text--body: #727272;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+body {
+	font-family: "Open Sans" sans-serif;
+	font-size: 16px;
+}
+
+/* Site */
+.site-content .content-area#primary {
+	background-color: var(--color-bg--body);
+}
+
+.entry-content > .alignfull:first-of-type {
+	margin-top: 0;
+}
+
+/* Pages */
+/* Navigation */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"sass/style.scss",
+		"sass/variables/_colors.scss",
+		"sass/typography/_headings.scss",
+		"sass/typography/_font.scss",
+		"sass/site/_header.scss",
+		"sass/site/_body.scss",
+		"sass/site/_content.scss",
+		"sass/site/_layout.scss",
+		"sass/pages/_front-page.scss",
+		"sass/navigation/_links.scss",
+		"sass/navigation/_menus.scss"
+	],
+	"names": [],
+	"mappings": "AAAA;;;;;;;;;;;EAWE;AAEF,wBAAwB;ACbxB,AAAA,KAAK,CAAC;CACL,gBAAgB,CAAA,KAAC;CACjB,oBAAoB,CAAA,QAAC;CACrB,oBAAoB,CAAA,QAAC;CACrB,oBAAoB,CAAA,QAAC;CACrB,kBAAkB,CAAA,QAAC;CACnB,kBAAkB,CAAA,QAAC;CACnB;;ADUD,gBAAgB;AEjBhB,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE,CAAC;CACF,WAAW,EAAE,qBAAqB;CAClC;;ACPD,AAAA,IAAI,CAAC;CACJ,WAAW,EAAE,sBAAsB;CACnC,SAAS,EAAE,IAAI;CACf;;AHmBD,UAAU;AKtBV,AACC,aADY,CACZ,aAAa,AAAA,QAAQ,CAAC;CACrB,gBAAgB,EAAE,qBAAqB;CACvC;;ACFF,AAAA,cAAc,GAAG,UAAU,AAAA,cAAc,CAAC;CACzC,UAAU,EAAE,CAAC;CACb;;AN0BD,WAAW;AAIX,gBAAgB"
+}

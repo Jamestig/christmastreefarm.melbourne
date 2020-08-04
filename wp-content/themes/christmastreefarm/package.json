@@ -1,0 +1,26 @@
+{
+	"name": "christmastreefarm",
+	"version": "1.0.0",
+	"description": "Christmas Tree Farm theme",
+	"main": "index.js",
+	"scripts": {
+		"sync": "browser-sync start --proxy \"localhost/wp_xmas/\" --files \"**/*\" ",
+		"watch": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+		"dev": "run-p sync watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:Jamestig/christmastreefarm.melbourne.git"
+	},
+	"keywords": [
+		"Restaurant"
+	],
+	"author": "jamestr",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"browser-sync": "^2.26.12",
+		"node-sass": "^4.14.1",
+		"npm-run-all": "^4.1.5"
+	}
+}
