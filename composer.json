@@ -1,0 +1,37 @@
+{
+	"name": "james/austore",
+	"description": "Authentique Online Boutique",
+	"extra": {
+		"installer-paths": {
+			"wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+			"wp-content/themes/{$name}/": ["type:wordpress-theme"]
+		}
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+	"require": {
+		"wpackagist-theme/storefront": "*",
+		"wpackagist-plugin/admin-menu-editor": "*",
+		"wpackagist-plugin/filebird": "*",
+		"wpackagist-plugin/gutenberg": "*",
+		"wpackagist-plugin/health-check": "*",
+		"wpackagist-plugin/mailchimp-for-wp": "*",
+		"wpackagist-plugin/query-monitor": "*",
+		"wpackagist-plugin/regenerate-thumbnails": "*",
+		"wpackagist-plugin/shortcode-widget": "*",
+		"wpackagist-plugin/storefront-footer-bar": "*",
+		"wpackagist-plugin/storefront-top-bar": "*",
+		"wpackagist-plugin/tinymce-advanced": "*",
+		"wpackagist-plugin/woo-gutenberg-products-block": "*",
+		"wpackagist-plugin/woocommerce": "*",
+		"wpackagist-plugin/woocommerce-admin": "*",
+		"wpackagist-plugin/wordpress-importer": "*",
+		"wpackagist-plugin/wpforms-lite": "*",
+		"wpackagist-plugin/wp-mail-logging": "*",
+		"wpackagist-plugin/wp-migrate-db": "*"
+	}
+}
