@@ -1,0 +1,35 @@
+/* Breadcrumb */
+.storefront-breadcrumb {
+	margin-bottom: 0;
+	background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+	.storefront-breadcrumb {
+		max-width: 66.4989378333em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2em 2.617924em;
+		box-sizing: content-box;
+
+		.col-full {
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 66.4989378333em) {
+	.storefront-breadcrumb {
+		margin-left: 2.617924em;
+		margin-right: 2.617924em;
+		padding: 1em 0;
+	}
+}
+
+@media (max-width: 568px) {
+	.storefront-breadcrumb {
+		margin-left: 1.41575em;
+		margin-right: 1.41575em;
+		padding: 1em 0;
+	}
+}

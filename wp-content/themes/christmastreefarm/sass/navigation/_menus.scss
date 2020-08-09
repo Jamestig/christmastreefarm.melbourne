@@ -1,0 +1,24 @@
+/* Handheld menu */
+.storefront-hamburger-menu-active
+	.main-navigation.toggled
+	.handheld-navigation {
+	overflow: auto;
+}
+
+#menu-handheld-menu .a2a_kit {
+	display: flex;
+
+	> a {
+		padding: 10px;
+	}
+}
+
+/* Primary nav */
+.site-header ul.menu li.current-menu-item {
+	border-top: 2px solid #29573b;
+	border-bottom: 2px solid #29573b;
+
+	> a {
+		color: #29573b;
+	}
+}

@@ -1,2 +1,27 @@
-// Site header
-header.site-header {}
+/* Site header */
+.site-header .site-branding img {
+	max-height: 100px;
+	width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+	.site-header {
+		.site-branding img {
+			max-height: 140px;
+		}
+
+		> .col-full {
+			border-bottom: 1px solid lightgray;
+		}
+
+		a.custom-logo-link {
+			position: absolute;
+			bottom: 20px;
+			margin-left: -45px;
+		}
+
+		div.primary-navigation {
+			margin-left: 185px;
+		}
+	}
+}

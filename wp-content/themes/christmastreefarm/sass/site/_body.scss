@@ -1,5 +1,25 @@
-.site-content {
-	.content-area#primary {
-		background-color: var(--color-bg--body);
+/* Body */
+.home .type-page {
+	padding-top: 0;
+}
+
+.home.page:not(.page-template-template-homepage) .site-header {
+	margin-bottom: 3.2em;
+}
+
+.site-content > .col-full {
+	background-color: white;
+}
+
+@media screen and (max-width: 568px) {
+	.site-content > .col-full {
+		padding: 1em 1.41575em;
+		margin-bottom: 1.41575em;
+	}
+}
+
+body:not(.home) {
+	.site-content > .col-full {
+		padding: 0 1.41575em 1em 1.41575em;
 	}
 }

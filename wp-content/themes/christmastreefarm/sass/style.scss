@@ -27,11 +27,12 @@
 @import "site/content";
 @import "site/layout";
 
-/* Pages */
-
-@import "pages/front-page";
-
 /* Navigation */
 
 @import "navigation/links";
 @import "navigation/menus";
+@import "navigation/breadcrumb";
+
+/* Pages */
+
+@import "pages/front-page";
