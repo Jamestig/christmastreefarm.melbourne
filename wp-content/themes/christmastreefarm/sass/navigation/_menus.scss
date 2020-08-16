@@ -15,10 +15,15 @@
 
 /* Primary nav */
 .site-header ul.menu li.current-menu-item {
-	border-top: 2px solid #29573b;
-	border-bottom: 2px solid #29573b;
-
 	> a {
 		color: #29573b;
 	}
+}
+
+.site-header ul#menu-primary-menu li.menu-item > a:hover {
+	border-top: 2px solid #29573b;
+	border-bottom: 2px solid #29573b;
+	color: #29573b;
+	margin-top: -2px;
+	margin-bottom: -2px;
 }

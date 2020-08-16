@@ -26,12 +26,18 @@
 @import "site/body";
 @import "site/content";
 @import "site/layout";
+@import "site/sidebar";
 
 /* Navigation */
 
 @import "navigation/links";
 @import "navigation/menus";
-@import "navigation/breadcrumb";
+@import "navigation/breadcrumbs";
+
+/* Woocommerce */
+
+@import "woocommerce/messages";
+@import "woocommerce/single-product";
 
 /* Pages */
 

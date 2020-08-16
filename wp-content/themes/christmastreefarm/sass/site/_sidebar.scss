@@ -1,0 +1,8 @@
+.widget_product_categories ul li::before {
+	content: "\f1bb";
+}
+
+.widget_product_categories ul li.current-cat::before {
+	content: "\f1bb";
+	opacity: .8;
+}

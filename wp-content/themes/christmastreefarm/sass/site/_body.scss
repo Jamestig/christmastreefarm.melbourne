@@ -9,17 +9,20 @@
 
 .site-content > .col-full {
 	background-color: white;
+	margin-bottom: 3em;
 }
 
 @media screen and (max-width: 568px) {
 	.site-content > .col-full {
-		padding: 1em 1.41575em;
+		padding: 0 1.41575em;
 		margin-bottom: 1.41575em;
 	}
 }
 
-body:not(.home) {
-	.site-content > .col-full {
-		padding: 0 1.41575em 1em 1.41575em;
+@media screen and (max-width: 66.4989em) {
+	body:not(.home) {
+		.site-content > .col-full {
+			padding: 0 1.41575em 1em 1.41575em;
+		}
 	}
 }

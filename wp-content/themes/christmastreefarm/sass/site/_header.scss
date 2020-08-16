@@ -1,7 +1,11 @@
 /* Site header */
-.site-header .site-branding img {
-	max-height: 100px;
-	width: auto;
+.site-header {
+	box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.5);
+
+	.site-branding img {
+		max-height: 100px;
+		width: auto;
+	}
 }
 
 @media screen and (min-width: 1024px) {

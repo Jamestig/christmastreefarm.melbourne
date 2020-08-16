@@ -50,5 +50,32 @@ function ctf_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'ctf_enqueue_scripts', 10 );
 
 /**
- * Require external function files
+ * Remove sidebar
  */
+function xm_remove_storefront_sidebar() {
+	if ( is_product() ) {
+		remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
+	}
+}
+add_action( 'get_header', 'xm_remove_storefront_sidebar' );
+
+/**
+ * Re-arrange breadcrumb
+ */
+function xm_rearrange() {
+	remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
+	add_action( 'woocommerce_before_shop_loop', 'woocommerce_breadcrumb', 5 );
+	add_action( 'storefront_page', 'woocommerce_breadcrumb', 15 );
+	add_action( 'woocommerce_before_single_product', 'woocommerce_breadcrumb', 5 );
+}
+add_action( 'init', 'xm_rearrange', 10 );
+
+add_action( 'wp_print_styles', 'dequeue_xm_theme_styles', 100 );
+/**
+ * Add breadcrumb to blog page.
+ */
+function dequeue_xm_theme_styles() {
+	if ( is_home() ) {
+		add_action( 'storefront_content_top', 'woocommerce_breadcrumb', 10 );
+	}
+}

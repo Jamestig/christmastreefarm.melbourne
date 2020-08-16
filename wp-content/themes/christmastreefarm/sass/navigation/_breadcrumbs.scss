@@ -2,14 +2,20 @@
 .storefront-breadcrumb {
 	margin-bottom: 0;
 	background-color: white;
+
+	.col-full {
+		margin: 0;
+		padding: 0;
+	}
 }
 
+/*
 @media screen and (min-width: 768px) {
 	.storefront-breadcrumb {
 		max-width: 66.4989378333em;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 2em 2.617924em;
+		padding: 2em 1.41575em;
 		box-sizing: content-box;
 
 		.col-full {
@@ -33,3 +39,4 @@
 		padding: 1em 0;
 	}
 }
+*/
