@@ -1,9 +1,6 @@
-/* Hero image section */
+/* Hero image section
 @media (max-width: 568px) {
-	.storefront-align-wide.page-template-template-fullwidth-php
-		.hentry
-		.entry-content
-		.alignfull:first-of-type {
+	.aligncol {
 		margin-left: -2.8315em;
 		margin-right: -2.8315em;
 		width: auto;
@@ -12,11 +9,9 @@
 }
 
 @media screen and (min-width: 66.4989em) {
-	.storefront-align-wide.page-template-template-fullwidth-php
-		.hentry
-		.entry-content
-		.alignfull:first-of-type {
+	.aligncol {
 		margin-left: -2.617924em;
 		margin-right: -2.617924em;
 	}
 }
+*/

@@ -33,6 +33,7 @@
 @import "navigation/links";
 @import "navigation/menus";
 @import "navigation/breadcrumbs";
+@import "navigation/handheld-bar";
 
 /* Woocommerce */
 
@@ -42,3 +43,7 @@
 /* Pages */
 
 @import "pages/front-page";
+
+/* Parts */
+
+@import "parts/form";

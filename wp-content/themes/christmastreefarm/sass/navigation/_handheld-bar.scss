@@ -1,0 +1,5 @@
+.site-footer
+	.storefront-handheld-footer-bar
+	a:not(.button):not(.components-button) {
+	color: var(--color-theme--darkgreen);
+}
