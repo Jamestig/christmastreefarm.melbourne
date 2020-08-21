@@ -88,3 +88,21 @@ function xm_rearrange_single() {
 	add_action( 'woocommerce_product_thumbnails', 'woocommerce_template_single_meta', 25 );
 }
 add_action( 'init', 'xm_rearrange_single', 10 );
+
+/**
+ * Remove checkout coupon form
+ */
+function xm_remove_checkout_coupon() {
+	remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+}
+add_action( 'init', 'xm_remove_checkout_coupon', 10 );
+
+/**
+ * Remove downloads tab
+ */
+add_filter( 'woocommerce_account_menu_items', 'xm_remove_downloads_my_account', 999 );
+
+function xm_remove_downloads_my_account( $items ) {
+unset($items['downloads']);
+return $items;
+}

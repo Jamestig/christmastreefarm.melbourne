@@ -4,7 +4,7 @@
  Description:  Christmase Tree Farm theme
  Author:       James
  Template:     storefront
- Version:      1.0.0
+ Version:      1.0.1
  License:      GNU General Public License v2 or late2
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
@@ -206,6 +206,15 @@ body.page header.entry-header h1 {
 	opacity: .8;
 }
 
+.woocommerce-widget-layered-nav .count {
+	display: none;
+}
+
+.tagcloud > a {
+	display: block;
+	font-size: 1em !important;
+}
+
 /* Navigation */
 /* Handheld menu */
 .storefront-hamburger-menu-active
@@ -385,7 +394,7 @@ body.single-product .product .entry-summary .edit-link a {
 		float: right;
 		width: 48%;
 	}
-	.sfb-footer-bar form.contact-form div:nth-child(n + 2) {
+	.sfb-footer-bar form.contact-form div:nth-child(1n + 2) {
 		float: left;
 		width: 50%;
 	}
@@ -396,22 +405,27 @@ body.single-product .product .entry-summary .edit-link a {
 		clear: both;
 		text-align: center;
 	}
-	.sfb-footer-bar form.contact-form input[type="text"] {
+	.sfb-footer-bar form.contact-form input[type="text"],
+	.sfb-footer-bar form.contact-form input[type="email"] {
 		margin-bottom: 0.4em;
 	}
 }
 
 .wholesale-form ul {
 	list-style: none;
-	margin-right: 3em;
+	margin: 2em 0;
+	padding: 2em;
+	border: 1px solid var(--color-bg--grey);
+	background-color: white;
 }
 
 .wholesale-form ul li {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
+	align-items: baseline;
 	margin-bottom: 1em;
-	border-bottom: 1px solid var(--color-border--grey);
+	border-bottom: 1px solid var(--color-bg--grey);
 }
 
 .wholesale-form ul li span input {

@@ -6,3 +6,16 @@
 	content: "\f1bb";
 	opacity: .8;
 }
+
+// Attributes
+.woocommerce-widget-layered-nav {
+	.count {
+		display: none;
+	}
+}
+
+// Tag cloud
+.tagcloud > a {
+	display: block;
+	font-size: 1em !important;
+}
