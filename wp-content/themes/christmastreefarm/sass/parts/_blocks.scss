@@ -1,0 +1,81 @@
+// Fit block to width of column
+@media (max-width: 568px) {
+	.aligncol {
+		margin-left: -1.41575em !important;
+		margin-right: -1.41575em !important;
+		width: auto !important;
+	}
+}
+
+@media screen and (min-width: 66.4989em) {
+	.aligncol {
+		margin-left: -2.617924em !important;
+		margin-right: -2.617924em !important;
+	}
+}
+
+// Remove padding and margin gaps
+.no-gap .wp-block-column {
+	margin-right: 0 !important;
+	padding-right: 0 !important;
+}
+
+@media screen and (min-width: 600px) and (max-width: 781px) {
+	.no-gap .wp-block-column {
+		flex-basis: 50% !important;
+	}
+}
+
+.no-gap {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+// Transform cover block
+.wp-block-cover.image-link {
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: 0.2s ease;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.2);
+		font-size: 1.1em;
+	}
+
+	.wp-block-cover__inner-container {
+		height: 100%;
+		padding: 0 !important;
+
+		p {
+			height: 100%;
+
+			a {
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// Add borders
+@media screen and (min-width: 768px) {
+	.border--right {
+		border-right: 1px solid white;
+	}
+}
+
+.border--bottom {
+	border-bottom: 1px solid white;
+}
+
+// Remove bottom margins
+.mb-remove {
+	margin-bottom: 0;
+
+	> div {
+		margin-bottom: 0 !important;
+	}
+}

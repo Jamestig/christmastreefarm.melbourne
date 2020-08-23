@@ -1,4 +1,22 @@
 // Footer bar contact form
+.sfb-footer-bar {
+	form.contact-form {
+		.grunion-field-label {
+			display: none !important;
+		}
+
+		.contact-submit {
+			clear: both;
+			text-align: center;
+		}
+
+		input[type="text"],
+		input[type="email"] {
+			margin-bottom: 0.4em;
+		}
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.sfb-footer-bar {
 		form.contact-form {
@@ -10,20 +28,6 @@
 			div:nth-child(1n + 2) {
 				float: left;
 				width: 50%;
-			}
-
-			.grunion-field-label {
-				display: none;
-			}
-
-			.contact-submit {
-				clear: both;
-				text-align: center;
-			}
-
-			input[type="text"],
-			input[type="email"] {
-				margin-bottom: 0.4em;
 			}
 		}
 	}
@@ -54,6 +58,21 @@
 					width: 100px;
 				}
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.wholesale-form {
+		ul {
+			width: 48%;
+		}
+		.wholesale-ga {
+			display: inline-block;
+		}
+
+		.wholesale-gb {
+			float: right;
 		}
 	}
 }
