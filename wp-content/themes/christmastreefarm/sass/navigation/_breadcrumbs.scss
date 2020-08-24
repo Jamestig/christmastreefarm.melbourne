@@ -9,34 +9,20 @@
 	}
 }
 
-/*
-@media screen and (min-width: 768px) {
+// Hide breadcrumbs
+.page-id-252 {
 	.storefront-breadcrumb {
-		max-width: 66.4989378333em;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 2em 1.41575em;
-		box-sizing: content-box;
+		position: absolute;
+		z-index: 5;
+		background: none;
+		color: white;
 
-		.col-full {
-			padding: 0;
+		a {
+			color: white !important;
+		}
+
+		span::after {
+			color: white !important;
 		}
 	}
 }
-
-@media (max-width: 66.4989378333em) {
-	.storefront-breadcrumb {
-		margin-left: 2.617924em;
-		margin-right: 2.617924em;
-		padding: 1em 0;
-	}
-}
-
-@media (max-width: 568px) {
-	.storefront-breadcrumb {
-		margin-left: 1.41575em;
-		margin-right: 1.41575em;
-		padding: 1em 0;
-	}
-}
-*/

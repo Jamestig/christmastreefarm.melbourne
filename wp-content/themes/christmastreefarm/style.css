@@ -43,6 +43,7 @@ body {
 /* Site header */
 .site-header {
 	box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.5);
+	margin-bottom: 0;
 }
 
 .site-header .site-branding img {
@@ -237,37 +238,21 @@ body.page header.entry-header h1 {
 	padding: 0;
 }
 
-/*
-@media screen and (min-width: 768px) {
-	.storefront-breadcrumb {
-		max-width: 66.4989378333em;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 2em 1.41575em;
-		box-sizing: content-box;
-
-		.col-full {
-			padding: 0;
-		}
-	}
+.page-id-252 .storefront-breadcrumb {
+	position: absolute;
+	z-index: 5;
+	background: none;
+	color: white;
 }
 
-@media (max-width: 66.4989378333em) {
-	.storefront-breadcrumb {
-		margin-left: 2.617924em;
-		margin-right: 2.617924em;
-		padding: 1em 0;
-	}
+.page-id-252 .storefront-breadcrumb a {
+	color: white !important;
 }
 
-@media (max-width: 568px) {
-	.storefront-breadcrumb {
-		margin-left: 1.41575em;
-		margin-right: 1.41575em;
-		padding: 1em 0;
-	}
+.page-id-252 .storefront-breadcrumb span::after {
+	color: white !important;
 }
-*/
+
 .site-footer
 .storefront-handheld-footer-bar
 a:not(.button):not(.components-button) {
@@ -396,7 +381,7 @@ body.single-product .product .entry-summary .edit-link a {
 	}
 }
 
-.wholesale-form ul {
+.order-form ul {
 	list-style: none;
 	margin: 2em 0;
 	padding: 2em;
@@ -404,7 +389,7 @@ body.single-product .product .entry-summary .edit-link a {
 	background-color: white;
 }
 
-.wholesale-form ul li {
+.order-form ul li {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
@@ -413,7 +398,7 @@ body.single-product .product .entry-summary .edit-link a {
 	border-bottom: 1px solid var(--color-bg--grey);
 }
 
-.wholesale-form ul li span input {
+.order-form ul li span input {
 	background: none;
 	border: none;
 	box-shadow: none;
@@ -501,12 +486,30 @@ body.single-product .product .entry-summary .edit-link a {
 	border-bottom: 1px solid white;
 }
 
-.mb-remove {
+.mb0 {
 	margin-bottom: 0;
 }
 
-.mb-remove > div {
+.mb0 > div {
 	margin-bottom: 0 !important;
+}
+
+.mb1 {
+	margin-bottom: 1.5em;
+}
+
+.mb2 {
+	margin-bottom: 2em;
+}
+
+.mb3 {
+	margin-bottom: 3em;
+}
+
+.banner .sa-hover-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
