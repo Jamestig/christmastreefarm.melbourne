@@ -1,10 +1,8 @@
 // Fit block to width of column
-@media (max-width: 568px) {
-	.aligncol {
-		margin-left: -1.41575em !important;
-		margin-right: -1.41575em !important;
-		width: auto !important;
-	}
+.aligncol {
+	margin-left: -1.41575em !important;
+	margin-right: -1.41575em !important;
+	width: auto !important;
 }
 
 @media screen and (min-width: 66.4989em) {
@@ -34,7 +32,6 @@
 // Transform cover block
 .wp-block-cover.image-link {
 	padding: 0;
-	background-color: rgba(0, 0, 0, 0.4);
 	transition: 0.2s ease;
 
 	&:hover {
@@ -94,7 +91,7 @@
 
 // Banners
 .banner {
-	.sa-hover-container {
+	.sa_hover_container {
 		display: flex;
 		align-items: center;
 		justify-content: center;

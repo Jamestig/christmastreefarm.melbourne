@@ -4,7 +4,7 @@
  Description:  Christmase Tree Farm theme
  Author:       James
  Template:     storefront
- Version:      1.0.1
+ Version:      1.0.2
  License:      GNU General Public License v2 or late2
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
@@ -43,7 +43,7 @@ body {
 /* Site header */
 .site-header {
 	box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.5);
-	margin-bottom: 0;
+	margin-bottom: 0 !important;
 }
 
 .site-header .site-branding img {
@@ -238,19 +238,26 @@ body.page header.entry-header h1 {
 	padding: 0;
 }
 
-.page-id-252 .storefront-breadcrumb {
+.page-id-252 .storefront-breadcrumb,
+.page-id-254 .storefront-breadcrumb,
+.page-id-87 .storefront-breadcrumb {
 	position: absolute;
 	z-index: 5;
 	background: none;
 	color: white;
 }
 
-.page-id-252 .storefront-breadcrumb a {
+.page-id-252 .storefront-breadcrumb a,
+.page-id-254 .storefront-breadcrumb a,
+.page-id-87 .storefront-breadcrumb a {
 	color: white !important;
 }
 
-.page-id-252 .storefront-breadcrumb span::after {
+.page-id-252 .storefront-breadcrumb span::after,
+.page-id-254 .storefront-breadcrumb span::after,
+.page-id-87 .storefront-breadcrumb span::after {
 	color: white !important;
+	opacity: .8;
 }
 
 .site-footer
@@ -337,24 +344,6 @@ body.single-product .product .entry-summary .edit-link a {
 	color: white;
 }
 
-/* Pages */
-/* Hero image section
-@media (max-width: 568px) {
-	.aligncol {
-		margin-left: -2.8315em;
-		margin-right: -2.8315em;
-		width: auto;
-		padding: 0;
-	}
-}
-
-@media screen and (min-width: 66.4989em) {
-	.aligncol {
-		margin-left: -2.617924em;
-		margin-right: -2.617924em;
-	}
-}
-*/
 /* Parts */
 .sfb-footer-bar form.contact-form .grunion-field-label {
 	display: none !important;
@@ -417,12 +406,10 @@ body.single-product .product .entry-summary .edit-link a {
 	}
 }
 
-@media (max-width: 568px) {
-	.aligncol {
-		margin-left: -1.41575em !important;
-		margin-right: -1.41575em !important;
-		width: auto !important;
-	}
+.aligncol {
+	margin-left: -1.41575em !important;
+	margin-right: -1.41575em !important;
+	width: auto !important;
 }
 
 @media screen and (min-width: 66.4989em) {
@@ -450,7 +437,6 @@ body.single-product .product .entry-summary .edit-link a {
 
 .wp-block-cover.image-link {
 	padding: 0;
-	background-color: rgba(0, 0, 0, 0.4);
 	transition: 0.2s ease;
 }
 
@@ -506,10 +492,51 @@ body.single-product .product .entry-summary .edit-link a {
 	margin-bottom: 3em;
 }
 
-.banner .sa-hover-container {
+.banner .sa_hover_container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+	div.responsive-tabs ul.responsive-tabs__list {
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		border-top: 1px solid white;
+	}
+	div.responsive-tabs ul.responsive-tabs__list > li {
+		flex: 1 1 33.3%;
+		height: 150px;
+		color: white;
+		background-color: var(--color-theme--darkgreen);
+		border: none;
+		border-radius: 0;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.5em;
+	}
+	div.responsive-tabs ul.responsive-tabs__list > li:hover {
+		background-color: var(--color-theme--green);
+		color: var(--color-border--grey);
+	}
+	div.responsive-tabs ul.responsive-tabs__list > li:not(:last-child) {
+		border-right: 1px solid white;
+	}
+	div.responsive-tabs ul.responsive-tabs__list .responsive-tabs__list__item--active {
+		background-color: var(--color-theme--green);
+		top: 0px;
+	}
+	div.responsive-tabs div.tabcontent {
+		border: none;
+	}
+	div.responsive-tabs div.tabcontent .wp-block-group {
+		margin: 2.6em;
+	}
 }
 
 /*# sourceMappingURL=style.css.map */

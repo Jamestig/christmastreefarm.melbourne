@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+	div.responsive-tabs {
+		ul.responsive-tabs__list {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			border-top: 1px solid white;
+
+			> li {
+				flex: 1 1 33.3%;
+				height: 150px;
+				color: white;
+				background-color: var(--color-theme--darkgreen);
+				border: none;
+				border-radius: 0;
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 1.5em;
+
+				&:hover {
+					background-color: var(--color-theme--green);
+					color: var(--color-border--grey);
+				}
+
+				&:not(:last-child) {
+					border-right: 1px solid white;
+				}
+			}
+
+			.responsive-tabs__list__item--active {
+				background-color: var(--color-theme--green);
+				top: 0px;
+			}
+		}
+
+		div.tabcontent {
+			border: none;
+
+			.wp-block-group {
+				margin: 2.6em;
+			}
+		}
+	}
+}

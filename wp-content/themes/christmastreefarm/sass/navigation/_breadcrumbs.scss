@@ -10,7 +10,9 @@
 }
 
 // Hide breadcrumbs
-.page-id-252 {
+.page-id-252,
+.page-id-254,
+.page-id-87 {
 	.storefront-breadcrumb {
 		position: absolute;
 		z-index: 5;
@@ -23,6 +25,7 @@
 
 		span::after {
 			color: white !important;
+			opacity: .8;
 		}
 	}
 }

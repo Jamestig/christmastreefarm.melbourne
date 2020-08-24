@@ -4,7 +4,7 @@
  Description:  Christmase Tree Farm theme
  Author:       James
  Template:     storefront
- Version:      1.0.1
+ Version:      1.0.2
  License:      GNU General Public License v2 or late2
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
@@ -40,11 +40,8 @@
 @import "woocommerce/messages";
 @import "woocommerce/single-product";
 
-/* Pages */
-
-@import "pages/front-page";
-
 /* Parts */
 
 @import "parts/form";
 @import "parts/blocks";
+@import "parts/tabs";
