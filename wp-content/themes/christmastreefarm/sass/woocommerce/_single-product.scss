@@ -20,12 +20,24 @@ body.single-product {
 			}
 
 			a {
-				color: white;
+				color: var(--color-text--light);
 				transition: .3s ease;
+				text-decoration: underline;
 			}
 
 			h1.product_title {
 				color: white;
+			}
+
+			p.price {
+				display: flex;
+				flex-flow: column-reverse;
+
+				span.uom {
+					display: block;
+					margin-bottom: 1em;
+					margin-top: -.6em;
+				}
 			}
 
 			.wcpa_price_summary {

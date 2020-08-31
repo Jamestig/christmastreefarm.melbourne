@@ -1,0 +1,21 @@
+// Hide product page price
+body.postid-446 {
+	.entry-summary > .price {
+		display: none;
+	}
+}
+
+// Collection product
+body.postid-452 {
+	.entry-summary > .price {
+		display: none;
+	}
+
+	.wcpa_type_number {
+		.wcpa_priceouter {
+			position: absolute;
+			right: 65px;
+			margin-top: 3px;
+		}
+	}
+}

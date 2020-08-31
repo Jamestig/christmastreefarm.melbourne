@@ -43,15 +43,18 @@
 		height: 100%;
 		padding: 0 !important;
 
-		p {
+		p,
+		h2,
+		h3 {
 			height: 100%;
 
 			a {
 				height: 100%;
 				display: flex;
 				justify-content: center;
-				align-items: center;
+				align-items: flex-end;
 				text-decoration: none;
+				padding: 1em;
 			}
 		}
 	}

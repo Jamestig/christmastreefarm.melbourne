@@ -2,3 +2,23 @@ body {
 	font-family: "Open Sans" sans-serif;
 	font-size: 16px;
 }
+
+.text--white {
+	color: var(--color-text--white);
+}
+
+.text--light {
+	color: var(--color-text--light);
+}
+
+.text--grey {
+	color: var(--color-text--body);
+}
+
+.text--green {
+	color: var(--color-theme--green);
+}
+
+.text--darkgreen {
+	color: var(--color-theme--darkgreen);
+}

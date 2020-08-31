@@ -28,6 +28,12 @@
 @import "site/sidebar";
 @import "site/footer";
 
+/* Forms */
+
+@import "site/forms/form-contact";
+@import "site/forms/form-stands";
+@import "site/forms/form-wholesale";
+
 /* Navigation */
 
 @import "navigation/links";
@@ -39,9 +45,11 @@
 
 @import "woocommerce/messages";
 @import "woocommerce/single-product";
+@import "woocommerce/services";
 
 /* Parts */
 
-@import "parts/form";
 @import "parts/blocks";
 @import "parts/tabs";
+@import "parts/helpers";
+@import "parts/topbar";

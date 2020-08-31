@@ -15,6 +15,10 @@
 		padding: 1rem 0;
 		margin-bottom: 0;
 	}
+
+	p {
+		color: white;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -37,11 +41,11 @@
 
 	body.archive {
 		.site-main > .storefront-breadcrumb {
-			padding-top: 8em;
+			padding-top: 10em;
 		}
 
 		#secondary {
-			padding-top: 8em;
+			padding-top: 10em;
 		}
 	}
 }
