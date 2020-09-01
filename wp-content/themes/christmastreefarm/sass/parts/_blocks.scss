@@ -18,15 +18,22 @@
 	padding-right: 0 !important;
 }
 
+.no-gap {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+// Tablet columns
 @media screen and (min-width: 600px) and (max-width: 781px) {
-	.no-gap .wp-block-column {
+	.col-2 .wp-block-column {
 		flex-basis: 50% !important;
 	}
 }
 
-.no-gap {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
+@media screen and (min-width: 600px) and (max-width: 781px) {
+	.col-3 .wp-block-column {
+		flex-basis: 33.33% !important;
+	}
 }
 
 // Transform cover block
@@ -60,6 +67,20 @@
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.wp-block-cover.block--tall {
+		min-height: 630px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.wp-block-cover.block--short {
+		min-height: 330px;
+		height: 330px;
+		font-size: .9em;
+	}
+}
+
 // Add borders
 @media screen and (min-width: 768px) {
 	.border--right {
@@ -75,8 +96,10 @@
 .mb0 {
 	margin-bottom: 0;
 
-	> div {
-		margin-bottom: 0 !important;
+	@media screen and (min-width: 768px) {
+		> div {
+			margin-bottom: 0 !important;
+		}
 	}
 }
 

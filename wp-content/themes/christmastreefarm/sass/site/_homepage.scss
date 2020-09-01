@@ -1,0 +1,36 @@
+.page-template-template-homepage {
+	.entry-content,
+	.entry-header {
+		max-width: unset;
+	}
+
+	.entry-content {
+		font-size: 1em;
+	}
+
+	.hentry > .col-full {
+		padding: 0;
+	}
+}
+
+// Video banner width
+@media screen and (max-width: 767px) {
+	.sph-hero {
+		margin-left: -2.8315em !important;
+		margin-right: -2.8315em !important;
+		width: auto !important;
+	}
+}
+
+@media screen and (min-width: 66.4989em) {
+	.sph-hero {
+		margin-left: -2.617924em !important;
+		margin-right: -2.617924em !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.sph-hero .sph-video {
+		width: 100%;
+	}
+}
