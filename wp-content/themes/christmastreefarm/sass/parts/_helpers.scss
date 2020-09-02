@@ -1,4 +1,20 @@
-.text--white,
-.text--white a {
-	color: white !important;
+// Single line price display
+.pricep_parent {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--color-border--grey);
+	margin-bottom: 1.6em;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	.pricep {
+		margin-bottom: 0;
+	}
+}
+
+// Border
+.border--bottom {
+	border-bottom: 1px solid var(--color-border--grey);
+	padding-bottom: .9em;
 }

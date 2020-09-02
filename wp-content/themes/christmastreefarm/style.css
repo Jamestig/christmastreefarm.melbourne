@@ -4,7 +4,7 @@
  Description:  Christmase Tree Farm theme
  Author:       James
  Template:     storefront
- Version:      1.0.3
+ Version:      1.0.32
  License:      GNU General Public License v2 or late2
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
@@ -45,6 +45,10 @@ body {
 }
 
 .text--white {
+	color: var(--color-text--white);
+}
+
+.text--white a {
 	color: var(--color-text--white);
 }
 
@@ -336,6 +340,47 @@ body.page header.entry-header h1 {
 	}
 }
 
+.commercial-columns .commercial-content {
+	background-color: var(--color-theme--darkgreen);
+	color: white;
+	padding: 1em;
+}
+
+.commercial-columns .commercial-content fieldset {
+	padding: 0;
+	background: none;
+}
+
+@media screen and (max-width: 568px) {
+	.commercial-columns select,
+	.commercial-columns input {
+		max-width: 250px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.commercial-columns {
+		display: flex;
+		flex-flow: column;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.commercial-columns .commercial-content {
+		padding: 2em;
+	}
+	.commercial-columns .commercial-content fieldset select,
+	.commercial-columns .commercial-content fieldset input {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.commercial-columns .wp-block-column:first-of-type {
+		margin-right: 0 !important;
+	}
+}
+
 /* Navigation */
 /* Handheld menu */
 .storefront-hamburger-menu-active
@@ -426,6 +471,18 @@ body.single-product .product .entry-summary {
 	color: white;
 	background: var(--color-theme--darkgreen);
 	padding: 1em;
+	/*
+			p.price {
+				display: flex;
+				flex-flow: column-reverse;
+
+				span.uom {
+					display: block;
+					margin-bottom: 1em;
+					margin-top: -.6em;
+				}
+			}
+			*/
 }
 
 @media screen and (min-width: 1024px) {
@@ -442,17 +499,6 @@ body.single-product .product .entry-summary a {
 
 body.single-product .product .entry-summary h1.product_title {
 	color: white;
-}
-
-body.single-product .product .entry-summary p.price {
-	display: flex;
-	flex-flow: column-reverse;
-}
-
-body.single-product .product .entry-summary p.price span.uom {
-	display: block;
-	margin-bottom: 1em;
-	margin-top: -.6em;
 }
 
 body.single-product .product .entry-summary .wcpa_price_summary {
@@ -642,7 +688,7 @@ body.postid-452 .wcpa_type_number .wcpa_priceouter {
 		border-top: 1px solid white;
 	}
 	div.responsive-tabs ul.responsive-tabs__list > li {
-		flex: 1 1 33.3%;
+		flex: 1 1;
 		height: 150px;
 		color: white;
 		background-color: var(--color-theme--darkgreen);
@@ -673,9 +719,23 @@ body.postid-452 .wcpa_type_number .wcpa_priceouter {
 	}
 }
 
-.text--white,
-.text--white a {
-	color: white !important;
+.pricep_parent {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--color-border--grey);
+	margin-bottom: 1.6em;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.pricep_parent .pricep {
+	margin-bottom: 0;
+}
+
+.border--bottom {
+	border-bottom: 1px solid var(--color-border--grey);
+	padding-bottom: .9em;
 }
 
 .woa-top-bar aside {

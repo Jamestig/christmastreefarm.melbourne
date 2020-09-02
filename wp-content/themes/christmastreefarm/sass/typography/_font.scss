@@ -5,6 +5,10 @@ body {
 
 .text--white {
 	color: var(--color-text--white);
+
+	a {
+		color: var(--color-text--white);
+	}
 }
 
 .text--light {
