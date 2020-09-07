@@ -106,3 +106,19 @@ function xm_remove_downloads_my_account( $items ) {
 unset($items['downloads']);
 return $items;
 }
+
+/**
+ * Remove sidebar from product page
+ */
+function iconic_remove_sidebar( $is_active_sidebar, $index ) {
+	if ( $index !== 'sidebar-1' ) {
+		return $is_active_sidebar;
+	}
+
+	if ( ! is_product() ) {
+		return $is_active_sidebar;
+	}
+
+	return false;
+}
+add_filter( 'is_active_sidebar', 'iconic_remove_sidebar', 10, 2 );

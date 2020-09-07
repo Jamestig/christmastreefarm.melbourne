@@ -1,34 +1,36 @@
-body.single-product {
-	.content-area {
-		width: unset;
-		float: unset;
-		margin: unset;
-	}
+@media screen and (min-width: 1024px) {
+	body.single-product {
+		.content-area {
+			width: unset;
+			float: unset;
+			margin: unset;
+		}
 
-	.storefront-breadcrumb {
-		padding: 2em 0;
-	}
+		.storefront-breadcrumb {
+			padding: 2em 0;
+		}
 
-	.product {
-		.entry-summary {
-			color: white;
-			background: var(--color-theme--darkgreen);
-			padding: 1em;
-
-			@media screen and (min-width: 1024px) {
-				padding: 2em;
-			}
-
-			a {
-				color: var(--color-text--light);
-				transition: .3s ease;
-				text-decoration: underline;
-			}
-
-			h1.product_title {
+		.product {
+			.entry-summary {
 				color: white;
-			}
-			/*
+				background: var(--color-theme--darkgreen);
+				padding: 1em;
+
+				@media screen and (min-width: 1024px) {
+					padding: 2em;
+				}
+
+				a {
+					color: var(--color-text--light);
+					transition: 0.3s ease;
+					text-decoration: underline;
+				}
+
+				h1.product_title {
+					color: white;
+				}
+				/*
+				// When Unit of Measurement plugin is active
 			p.price {
 				display: flex;
 				flex-flow: column-reverse;
@@ -40,45 +42,46 @@ body.single-product {
 				}
 			}
 			*/
-			.wcpa_price_summary {
-				background: none;
-			}
-
-			.wcpa_paragraph_block {
-				margin-bottom: 1.6em;
-			}
-
-			span.required_ast {
-				color: lightcoral;
-				padding: 0 2px;
-			}
-
-			.qib-container {
-				background: white;
-			}
-
-			.product_meta a {
-				color: white;
-			}
-
-			.button.alt {
-				background-color: white;
-				color: var(--color-theme--darkgreen);
-
-				&:hover {
-					color: var(--color-theme--green);
-					background-color: var(--color-bg--grey);
+				.wcpa_price_summary {
+					background: none;
 				}
-			}
 
-			.a2a_kit {
-				path {
-					fill: white;
+				.wcpa_paragraph_block {
+					margin-bottom: 1.6em;
 				}
-			}
 
-			.edit-link a {
-				color: white;
+				span.required_ast {
+					color: lightcoral;
+					padding: 0 2px;
+				}
+
+				.qib-container {
+					background: white;
+				}
+
+				.product_meta a {
+					color: white;
+				}
+
+				.button.alt {
+					background-color: white;
+					color: var(--color-theme--darkgreen);
+
+					&:hover {
+						color: var(--color-theme--green);
+						background-color: var(--color-bg--grey);
+					}
+				}
+
+				.a2a_kit {
+					path {
+						fill: white;
+					}
+				}
+
+				.edit-link a {
+					color: white;
+				}
 			}
 		}
 	}

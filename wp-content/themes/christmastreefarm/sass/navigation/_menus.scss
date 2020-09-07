@@ -13,6 +13,11 @@
 	}
 }
 
+.storefront-hamburger-menu-active .shm-close {
+	background-color: var(--color-theme--darkgreen);
+	color: white;
+}
+
 /* Primary nav */
 .site-header ul.menu li.current-menu-item {
 	> a {

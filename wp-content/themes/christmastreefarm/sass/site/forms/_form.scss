@@ -1,0 +1,13 @@
+@import "form-contact";
+@import "form-stands";
+@import "form-wholesale";
+@import "form-commercial";
+
+.wcpa_form_item.wcpa_type_paragraph {
+	margin-bottom: 1.5em !important;
+}
+
+.wcpa_tooltip {
+	right: 0 !important;
+	left: unset !important;
+}

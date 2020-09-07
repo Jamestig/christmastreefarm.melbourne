@@ -35,3 +35,7 @@
 	}
 }
 
+// Hide recaptcha badge
+.grecaptcha-badge {
+	visibility: hidden;
+}

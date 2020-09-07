@@ -1,0 +1,10 @@
+@media screen and (max-width: 568px) {
+	.jetpack-testimonial-shortcode {
+		display: flex;
+		flex-flow: column;
+
+		.testimonial-entry {
+			width: 100% !important;
+		}
+	}
+}
