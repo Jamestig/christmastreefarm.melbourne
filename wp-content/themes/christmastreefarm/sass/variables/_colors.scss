@@ -4,10 +4,33 @@
 	--color-bg--grey: #e3e3e3;
 	--color-border--grey: #f7f7f7;
 	--color-theme--green: #078028;
-	--color-theme--darkgreen: #29573b;
 	--color-text--header: #272727;
 	--color-text--link: #575757;
 	--color-text--body: #727272;
 	--color-text--white: #fff;
 	--color-text--light: #eaeaea;
+}
+
+.text--white {
+	color: var(--color-text--white) !important;
+
+	a {
+		color: var(--color-text--white) !important;
+	}
+}
+
+.text--light {
+	color: var(--color-text--light);
+}
+
+.text--grey {
+	color: var(--color-text--body);
+}
+
+.text--green {
+	color: var(--color-theme--green);
+}
+
+.text--darkgreen {
+	color: var(--color-theme--green);
 }
