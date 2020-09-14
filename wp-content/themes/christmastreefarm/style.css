@@ -4,7 +4,7 @@
  Description:  Christmase Tree Farm theme
  Author:       James
  Template:     storefront
- Version:      1.0.34
+ Version:      1.0.35
  License:      GNU General Public License v2 or late2
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
@@ -17,6 +17,7 @@
 	--color-bg--grey: #e3e3e3;
 	--color-border--grey: #f7f7f7;
 	--color-theme--green: #078028;
+	--color-theme--darkgreen: #29573b;
 	--color-text--header: #272727;
 	--color-text--link: #575757;
 	--color-text--body: #727272;
@@ -576,6 +577,14 @@ body.postid-452 .wcpa_type_number .wcpa_priceouter {
 	display: none;
 }
 
+.woocommerce-checkout-review-order-table td.product-name {
+	border: 2px solid var(--color-theme--green);
+}
+
+#e_deliverydate_field {
+	margin-bottom: 3em;
+}
+
 /* Parts */
 .aligncol {
 	margin-left: -1.41575em !important;
@@ -704,7 +713,7 @@ body.postid-452 .wcpa_type_number .wcpa_priceouter {
 		border-right: 1px solid white;
 	}
 	div.responsive-tabs ul.responsive-tabs__list .responsive-tabs__list__item--active {
-		background-color: var(--color-theme--green);
+		background-color: var(--color-theme--darkgreen);
 		top: 0px;
 	}
 	div.responsive-tabs div.tabcontent {
