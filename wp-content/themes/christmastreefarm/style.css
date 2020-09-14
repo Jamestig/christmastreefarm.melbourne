@@ -581,6 +581,10 @@ body.postid-452 .wcpa_type_number .wcpa_priceouter {
 	border: 2px solid var(--color-theme--green);
 }
 
+.woocommerce-checkout-review-order-table td.product-name a.remove {
+	float: right;
+}
+
 #e_deliverydate_field {
 	margin-bottom: 3em;
 }

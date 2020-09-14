@@ -1,6 +1,10 @@
 .woocommerce-checkout-review-order-table {
 	td.product-name {
 		border: 2px solid var(--color-theme--green);
+
+		a.remove {
+			float: right;
+		}
 	}
 }
 

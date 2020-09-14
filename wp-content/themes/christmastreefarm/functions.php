@@ -122,3 +122,8 @@ function iconic_remove_sidebar( $is_active_sidebar, $index ) {
 	return false;
 }
 add_filter( 'is_active_sidebar', 'iconic_remove_sidebar', 10, 2 );
+
+/**
+ * Require functions
+ */
+require 'inc/remove-products.php';
