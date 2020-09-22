@@ -11,3 +11,19 @@
 #e_deliverydate_field {
 	margin-bottom: 3em;
 }
+
+body.deliveryHidden {
+	ul#shipping_method li:first-of-type {
+		visibility: hidden !important;
+		position: absolute;
+		text-indent: -9999px;
+	}
+}
+
+body.collectHidden {
+	ul#shipping_method li:last-of-type {
+		visibility: hidden !important;
+		position: absolute;
+		text-indent: -9999px;
+	}
+}

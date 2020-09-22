@@ -22,23 +22,24 @@
 		mediaQuery();
 		console.log(mediaSize);
 
-		// Refresh page on resize
-		var responseSize;
-		var windowSize = jQuery(window);
-
-		if (windowSize.width() < 768) {
-			responseSize = 'small';
-		} else {
-			responseSize = 'large';
-		}
-
-		jQuery(window).resize(function () {
-			if ((windowSize.width() < 768) && (responseSize != 'small')) {
-				location.reload();
-			} else if ((windowSize.width() >= 768) && (responseSize != 'large')) {
-				location.reload();
+		// Check shipping method based on custom product addon
+		function shippingCheck() {
+			if ($(".variation-PleaseselecthowyoudliketoreceiveyourChristmastree div span:contains('Delivery')").length > 0) {
+				if ($('#shipping_method_0_flat_rate28').prop('checked', true) ) {
+					console.log('switch to delivery');
+					$('#shipping_method_0_flat_rate13').prop('checked', true);
+				}
+				$('body').addClass('collectHidden');
+			} else  if ($(".variation-PleaseselecthowyoudliketoreceiveyourChristmastree div span:contains('click')").length > 0) {
+				console.log('contains collect');
+				if ($('#shipping_method_0_flat_rate13').prop('checked', true) ) {
+					console.log('switch to collect');
+					$('#shipping_method_0_flat_rate28').prop('checked', true);
+				}
+				$('body').addClass('deliveryHidden');
 			}
-		});
+		}
+		shippingCheck();
 
 	}); // END DOCUMENT
 })(jQuery);

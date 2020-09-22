@@ -50,80 +50,10 @@ function ctf_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'ctf_enqueue_scripts', 10 );
 
 /**
- * Remove sidebar
- */
-function xm_remove_storefront_sidebar() {
-	if ( is_product() ) {
-		remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
-	}
-}
-add_action( 'get_header', 'xm_remove_storefront_sidebar' );
-
-/**
- * Re-arrange breadcrumb
- */
-function xm_rearrange_breadcrumb() {
-	remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
-	add_action( 'woocommerce_before_shop_loop', 'woocommerce_breadcrumb', 5 );
-	add_action( 'storefront_page', 'woocommerce_breadcrumb', 15 );
-	add_action( 'woocommerce_before_single_product', 'woocommerce_breadcrumb', 5 );
-}
-add_action( 'init', 'xm_rearrange_breadcrumb', 10 );
-
-add_action( 'wp_print_styles', 'xm_blog_breadcrumb', 100 );
-/**
- * Add breadcrumb to blog page.
- */
-function xm_blog_breadcrumb() {
-	if ( is_home() ) {
-		add_action( 'storefront_content_top', 'woocommerce_breadcrumb', 10 );
-	}
-}
-
-/**
- * Re-arrange single product
- */
-function xm_rearrange_single() {
-	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
-	add_action( 'woocommerce_product_thumbnails', 'woocommerce_template_single_meta', 25 );
-}
-add_action( 'init', 'xm_rearrange_single', 10 );
-
-/**
- * Remove checkout coupon form
- */
-function xm_remove_checkout_coupon() {
-	remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
-}
-add_action( 'init', 'xm_remove_checkout_coupon', 10 );
-
-/**
- * Remove downloads tab
- */
-add_filter( 'woocommerce_account_menu_items', 'xm_remove_downloads_my_account', 999 );
-
-function xm_remove_downloads_my_account( $items ) {
-unset($items['downloads']);
-return $items;
-}
-
-/**
- * Remove sidebar from product page
- */
-function iconic_remove_sidebar( $is_active_sidebar, $index ) {
-	if ( $index !== 'sidebar-1' ) {
-		return $is_active_sidebar;
-	}
-
-	if ( ! is_product() ) {
-		return $is_active_sidebar;
-	}
-
-	return false;
-}
-add_filter( 'is_active_sidebar', 'iconic_remove_sidebar', 10, 2 );
-
-/**
  * Require functions
  */
-require 'inc/remove-products.php';
+require 'inc/functions-account.php';
+require 'inc/functions-cart-checkout.php';
+require 'inc/functions-shop.php';
+require 'inc/functions-single.php';
+require 'inc/functions-site.php';

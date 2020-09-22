@@ -1,5 +1,9 @@
 <?php
 /**
+ * Cart and checkout functions
+ */
+
+/**
  * Allows to remove products in checkout page.
  * 
  * @param string $product_name 
@@ -18,7 +22,7 @@ function lionplugins_woocommerce_checkout_remove_item( $product_name, $cart_item
 			__( 'Remove this item', 'woocommerce' ),
 			esc_attr( $product_id ),
 			esc_attr( $_product->get_sku() )
-        ), $cart_item_key );
+			), $cart_item_key );
 
 		return '<span>' . $remove_link . '</span> <span>' . $product_name . '</span>';
 	}
@@ -26,3 +30,11 @@ function lionplugins_woocommerce_checkout_remove_item( $product_name, $cart_item
 	return $product_name;
 }
 add_filter( 'woocommerce_cart_item_name', 'lionplugins_woocommerce_checkout_remove_item', 10, 3 );
+
+/**
+ * Remove checkout coupon form
+ */
+function xm_remove_checkout_coupon() {
+	remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+}
+add_action( 'init', 'xm_remove_checkout_coupon', 10 );

@@ -4,7 +4,7 @@
  Description:  Christmase Tree Farm theme
  Author:       James
  Template:     storefront
- Version:      1.0.35
+ Version:      1.0.36
  License:      GNU General Public License v2 or late2
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
@@ -127,71 +127,6 @@ body {
 /* Content */
 .wc-block-grid {
 	padding-right: 8px;
-}
-
-.woocommerce-products-header {
-	background-color: var(--color-theme--green);
-	text-align: center;
-	margin: 0 auto;
-	box-sizing: content-box;
-}
-
-.woocommerce-products-header h1 {
-	color: white;
-	padding: 1rem 0;
-	margin-bottom: 0;
-}
-
-.woocommerce-products-header p {
-	color: white;
-}
-
-@media screen and (max-width: 767px) {
-	.woocommerce-products-header {
-		margin-left: -1.41575em;
-		margin-right: -1.41575em;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.woocommerce-products-header {
-		position: absolute;
-		width: auto;
-		left: 2.617924em;
-		right: 2.617924em;
-		margin: 0 auto;
-		max-width: 66.4989378333em;
-		padding: 0 2.617924em;
-	}
-	body.archive .site-main > .storefront-breadcrumb {
-		padding-top: 10em;
-	}
-	body.archive #secondary {
-		padding-top: 10.2em;
-	}
-	body.term-grade-a-christmas-trees .site-main > .storefront-breadcrumb,
-	body.term-grade-b-christmas-trees .site-main > .storefront-breadcrumb {
-		padding-top: 14em;
-	}
-	body.term-grade-a-christmas-trees #secondary,
-	body.term-grade-b-christmas-trees #secondary {
-		padding-top: 14.5em;
-	}
-}
-
-@media screen and (min-width: 66.4989em) {
-	.woocommerce-products-header {
-		position: absolute;
-		width: 100%;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		max-width: 66.4989378333em;
-		padding: 0 2.617924em;
-	}
-	.woocommerce-products-header h1 {
-		margin-bottom: 0;
-	}
 }
 
 body.page header.entry-header {
@@ -589,6 +524,105 @@ body.postid-452 .wcpa_type_number .wcpa_priceouter {
 	margin-bottom: 3em;
 }
 
+body.deliveryHidden ul#shipping_method li:first-of-type {
+	visibility: hidden !important;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+body.collectHidden ul#shipping_method li:last-of-type {
+	visibility: hidden !important;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+.storefront-sorting {
+	display: none;
+}
+
+.woocommerce-products-header {
+	background-color: var(--color-theme--green);
+	text-align: center;
+	margin: 0 auto;
+	margin-left: -1.41575em;
+	margin-right: -1.41575em;
+	margin-bottom: 2.617924em;
+	padding: 1.41575em;
+	box-sizing: content-box;
+}
+
+.woocommerce-products-header h1 {
+	color: white;
+	padding: 1rem 0;
+	margin-bottom: 0;
+}
+
+.woocommerce-products-header p {
+	color: white;
+}
+
+@media screen and (min-width: 66.4989em) {
+	.woocommerce-products-header {
+		margin-left: -2.617924em;
+		margin-right: -2.617924em;
+		padding: 1.41575em 2.617924em;
+	}
+}
+
+#secondary {
+	margin-top: 1.41575em;
+}
+
+/*
+@media screen and (min-width: 768px) {
+	.woocommerce-products-header {
+		position: absolute;
+		width: auto;
+		left: 2.617924em;
+		right: 2.617924em;
+		margin: 0 auto;
+		max-width: 66.4989378333em;
+		padding: 0 2.617924em;
+	}
+
+	body.archive {
+		.site-main > .storefront-breadcrumb {
+			padding-top: 10em;
+		}
+
+		#secondary {
+			padding-top: 10.2em;
+		}
+	}
+
+	body.term-grade-a-christmas-trees,
+	body.term-grade-b-christmas-trees {
+		.site-main > .storefront-breadcrumb {
+			padding-top: 14em;
+		}
+
+		#secondary {
+			padding-top: 14.5em;
+		}
+	}
+}
+
+@media screen and (min-width: 66.4989em) {
+	.woocommerce-products-header {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		max-width: 66.4989378333em;
+		padding: 0 2.617924em;
+
+		h1 {
+			margin-bottom: 0;
+		}
+	}
+}
+*/
 /* Parts */
 .aligncol {
 	margin-left: -1.41575em !important;
