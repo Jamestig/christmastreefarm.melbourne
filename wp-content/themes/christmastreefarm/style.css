@@ -4,7 +4,7 @@
  Description:  Christmase Tree Farm theme
  Author:       James
  Template:     storefront
- Version:      1.0.36
+ Version:      1.0.37
  License:      GNU General Public License v2 or late2
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
@@ -428,9 +428,6 @@ p.no-comments,
 		padding: 2em 0;
 	}
 	body.single-product .product .entry-summary {
-		color: white;
-		background: var(--color-theme--green);
-		padding: 1em;
 		/*
 				// When Unit of Measurement plugin is active
 			p.price {
@@ -445,22 +442,9 @@ p.no-comments,
 			}
 			*/
 	}
-}
-
-@media screen and (min-width: 1024px) and (min-width: 1024px) {
-	body.single-product .product .entry-summary {
-		padding: 2em;
-	}
-}
-
-@media screen and (min-width: 1024px) {
 	body.single-product .product .entry-summary a {
-		color: var(--color-text--light);
 		transition: 0.3s ease;
 		text-decoration: underline;
-	}
-	body.single-product .product .entry-summary h1.product_title {
-		color: white;
 	}
 	body.single-product .product .entry-summary .wcpa_price_summary {
 		background: none;
@@ -471,26 +455,6 @@ p.no-comments,
 	body.single-product .product .entry-summary span.required_ast {
 		color: lightcoral;
 		padding: 0 2px;
-	}
-	body.single-product .product .entry-summary .qib-container {
-		background: white;
-	}
-	body.single-product .product .entry-summary .product_meta a {
-		color: white;
-	}
-	body.single-product .product .entry-summary .button.alt {
-		background-color: white;
-		color: var(--color-theme--green);
-	}
-	body.single-product .product .entry-summary .button.alt:hover {
-		color: var(--color-theme--green);
-		background-color: var(--color-bg--grey);
-	}
-	body.single-product .product .entry-summary .a2a_kit path {
-		fill: white;
-	}
-	body.single-product .product .entry-summary .edit-link a {
-		color: white;
 	}
 }
 
@@ -565,7 +529,7 @@ body.collectHidden ul#shipping_method li:last-of-type {
 	.woocommerce-products-header {
 		margin-left: -2.617924em;
 		margin-right: -2.617924em;
-		padding: 1.41575em 2.617924em;
+		padding: 1.41575em 2.617924em !important;
 	}
 }
 

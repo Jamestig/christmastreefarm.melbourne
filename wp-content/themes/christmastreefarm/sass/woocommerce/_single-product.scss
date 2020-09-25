@@ -12,22 +12,18 @@
 
 		.product {
 			.entry-summary {
-				color: white;
-				background: var(--color-theme--green);
-				padding: 1em;
-
-				@media screen and (min-width: 1024px) {
-					padding: 2em;
-				}
+				//color: white;
+				//background: var(--color-theme--green);
+				//padding: 1em;
 
 				a {
-					color: var(--color-text--light);
+					//color: var(--color-text--light);
 					transition: 0.3s ease;
 					text-decoration: underline;
 				}
 
 				h1.product_title {
-					color: white;
+					//color: white;
 				}
 				/*
 				// When Unit of Measurement plugin is active
@@ -56,31 +52,31 @@
 				}
 
 				.qib-container {
-					background: white;
+					//background: white;
 				}
 
 				.product_meta a {
-					color: white;
+					//color: white;
 				}
 
 				.button.alt {
-					background-color: white;
-					color: var(--color-theme--green);
+					//background-color: white;
+					//color: var(--color-theme--green);
 
 					&:hover {
-						color: var(--color-theme--green);
-						background-color: var(--color-bg--grey);
+						//color: var(--color-theme--green);
+						//background-color: var(--color-bg--grey);
 					}
 				}
 
 				.a2a_kit {
 					path {
-						fill: white;
+						//fill: white;
 					}
 				}
 
 				.edit-link a {
-					color: white;
+					//color: white;
 				}
 			}
 		}

@@ -13,16 +13,6 @@ function xm_rearrange_single() {
 add_action( 'init', 'xm_rearrange_single', 10 );
 
 /**
- * Remove sidebar
- */
-function xm_remove_storefront_sidebar() {
-	if ( is_product() ) {
-		remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
-	}
-}
-add_action( 'get_header', 'xm_remove_storefront_sidebar' );
-
-/**
  * Remove sidebar from product page
  */
 function iconic_remove_sidebar( $is_active_sidebar, $index ) {

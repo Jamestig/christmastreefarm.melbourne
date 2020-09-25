@@ -22,7 +22,9 @@ function lionplugins_woocommerce_checkout_remove_item( $product_name, $cart_item
 			__( 'Remove this item', 'woocommerce' ),
 			esc_attr( $product_id ),
 			esc_attr( $_product->get_sku() )
-			), $cart_item_key );
+			),
+			$cart_item_key
+		);
 
 		return '<span>' . $remove_link . '</span> <span>' . $product_name . '</span>';
 	}
