@@ -27,8 +27,8 @@
 			if ($(".woocommerce-checkout-review-order-table tbody:contains('home')").length > 0 &&  $(".woocommerce-checkout-review-order-table tbody:contains('farm')").length > 0) {
 				console.log('error');
 				$('body').addClass('shippingError');
-				$('form.woocommerce-checkout').hide();
-				$('.entry-content > .woocommerce').append('<p class="woocommerce-error">Please choose your trees with either delivery or pickup | <a href="/cart/">Remove items from cart</a></p>');
+				//$('#place_order').hide();
+				$('.entry-content > .woocommerce').prepend('<p class="woocommerce-error">Please choose your trees with either delivery or pickup | <a href="/cart/">Remove items from cart</a></p>');
 			} else {
 			if ($(".variation-PleaseselecthowyoudliketoreceiveyourChristmastree div span:contains('Delivery')").length > 0) {
 				console.log('contains delivery');

@@ -27,3 +27,10 @@ body.collectHidden {
 		text-indent: -9999px;
 	}
 }
+
+// Disable order button on error
+body.shippingError {
+	#place_order {
+		display: none !important;
+	}
+}
