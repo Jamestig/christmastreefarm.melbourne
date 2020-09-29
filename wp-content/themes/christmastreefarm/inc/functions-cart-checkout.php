@@ -40,3 +40,30 @@ function xm_remove_checkout_coupon() {
 	remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 }
 add_action( 'init', 'xm_remove_checkout_coupon', 10 );
+
+/**
+ * Shipping term
+ */
+add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
+function custom_shipping_package_name( $name ) {
+	return 'Pickup/Delivery';
+}
+
+/**
+ * Avoid Empty Cart Redirect @ WooCommerce Checkout
+ */
+add_filter( 'woocommerce_checkout_redirect_empty_cart', '__return_false' );
+add_filter( 'woocommerce_checkout_update_order_review_expired', '__return_false' );
+add_filter( 'wc_add_to_cart_message_html', '__return_false' );
+
+/**
+ * Deny checkout for two shipping methods
+ */
+function deny_checkout_if_weight( $posted ) {
+	$classes = get_body_class();
+	if ( in_array( 'shippingError', $classes ) ) {
+		$notice = 'Sorry, please add products with only Delivery or Pickup';
+		wc_add_notice( $notice, 'error' );
+	}
+}
+add_action( 'woocommerce_before_checkout_form', 'deny_checkout_if_weight' );
