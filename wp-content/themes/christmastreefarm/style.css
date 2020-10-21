@@ -4,7 +4,7 @@
  Description:  Christmase Tree Farm theme
  Author:       James
  Template:     storefront
- Version:      1.0.39
+ Version:      1.12
  License:      GNU General Public License v2 or late2
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, two-columns, left-sidebar, responsive-layout, accessibility-ready
@@ -208,38 +208,42 @@ body.page header.entry-header h1 {
 	}
 }
 
+.grecaptcha-badge {
+	visibility: hidden;
+}
+
 /* Forms */
 .sfb-footer-bar h2.widget-title {
 	text-align: center;
 }
 
-.sfb-footer-bar form.contact-form .grunion-field-label {
-	display: none !important;
-}
-
-.sfb-footer-bar form.contact-form .contact-submit {
-	clear: both;
+.sfb-footer-bar form .contact-submit {
 	text-align: center;
-}
-
-.sfb-footer-bar form.contact-form input[type="text"],
-.sfb-footer-bar form.contact-form input[type="email"] {
-	margin-bottom: 0.4em;
+	margin: 2em 0;
 }
 
 @media screen and (min-width: 768px) {
-	.sfb-footer-bar form.contact-form div:first-of-type {
-		float: right;
-		width: 48%;
+	.sfb-footer-bar form {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
-	.sfb-footer-bar form.contact-form div:nth-child(1n + 2) {
-		float: left;
-		width: 50%;
+	.sfb-footer-bar form .contact-fields {
+		flex-basis: 49%;
 	}
-}
-
-.grecaptcha-badge {
-	visibility: hidden;
+	.sfb-footer-bar form .contact-fields input {
+		width: 100%;
+	}
+	.sfb-footer-bar form .contact-message {
+		flex-basis: 49%;
+	}
+	.sfb-footer-bar form .contact-message input {
+		width: 100%;
+	}
+	.sfb-footer-bar form .contact-submit {
+		flex-basis: 100%;
+	}
 }
 
 .stand-delivery {
@@ -816,6 +820,15 @@ body.shippingError #place_order {
 	.jetpack-testimonial-shortcode .testimonial-entry {
 		width: 100% !important;
 	}
+}
+
+/* Pages */
+.page-template-template-homepage:not(.has-post-thumbnail) .site-main {
+	padding-top: 0;
+}
+
+.page-template-template-homepage:not(.has-post-thumbnail) .site-main .entry-content .wp-block-group:first-of-type h1 {
+	margin: 0.5407911001em 0;
 }
 
 /*# sourceMappingURL=style.css.map */

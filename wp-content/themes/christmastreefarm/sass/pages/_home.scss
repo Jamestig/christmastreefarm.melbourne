@@ -1,0 +1,11 @@
+.page-template-template-homepage:not(.has-post-thumbnail) .site-main {
+	padding-top: 0;
+
+	.entry-content {
+		.wp-block-group:first-of-type {
+			h1 {
+				margin: 0.5407911001em 0;
+			}
+		}
+	}
+}

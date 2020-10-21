@@ -2,40 +2,42 @@
 	h2.widget-title {
 		text-align: center;
 	}
-	form.contact-form {
-		.grunion-field-label {
-			display: none !important;
-		}
 
+	form {
 		.contact-submit {
-			clear: both;
 			text-align: center;
-		}
-
-		input[type="text"],
-		input[type="email"] {
-			margin-bottom: 0.4em;
+			margin: 2em 0;
 		}
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.sfb-footer-bar {
-		form.contact-form {
-			div:first-of-type {
-				float: right;
-				width: 48%;
+		form {
+			display: flex;
+			flex-flow: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.contact-fields {
+				flex-basis: 49%;
+
+				input {
+					width: 100%;
+				}
 			}
 
-			div:nth-child(1n + 2) {
-				float: left;
-				width: 50%;
+			.contact-message {
+				flex-basis: 49%;
+
+				input {
+					width: 100%;
+				}
+			}
+
+			.contact-submit {
+				flex-basis: 100%;
 			}
 		}
 	}
-}
-
-// Hide recaptcha badge
-.grecaptcha-badge {
-	visibility: hidden;
 }
